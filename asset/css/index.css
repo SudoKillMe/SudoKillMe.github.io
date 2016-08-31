@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Baloo Paaji';
+}
+
+@font-face {
+    font-family: 'Baloo Paaji';
+    src:url('../fonts/BalooPaaji-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family:'Lobster';
+    src:url('../fonts/Lobster-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family:'Courgette';
+    src:url('../fonts/Courgette-Regular.ttf') format('truetype');
+}
+input,button{
+    outline: none;
+    border: none
+}
+::-webkit-input-placeholder{
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+}
+body{
+    background-image: url('../img/leaves.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    /*min-width: 1400px;
+    min-height: 700px;*/
+}
+#poem{
+    font-family: 'Courgette';
+    position: absolute;
+    top:250px;
+    left:100px;
+    font-size: 18px;
+    color:#ededff;
+}
+#login{
+    width:400px;
+    height:250px;
+    margin:250px auto;
+}
+.title{
+    font-size: 40px;
+    text-align: center;
+    color:#fff;
+
+}
+input{
+    display: block;
+    width:calc(100% - 20px);
+    height:30px;
+    margin:15px 0;
+    padding:10px;
+    border-radius: 5px;
+    background: #ededff;
+    font-size: 20px
+}
+input:focus{
+    background: #fff;
+}
+.submit{
+    display: block;
+    width:80%;
+    height:50px;
+    margin:15px auto;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #257de9;
+    color:#fff;
+}
+.submit:hover{
+    background: #2c8bfe;
+    cursor: pointer
+}
+#footer{
+    position: absolute;
+    width:300px;
+    bottom:50px;
+    left:50%;
+    margin-left: -150px;
+    text-align: center;
+}
