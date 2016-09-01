@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "微软雅黑";
+  src: url('../fonts/微软雅黑.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Paaji';
+  src: url('../fonts/BalooPaaji-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Courgette';
+  src: url('../fonts/Courgette-Regular.ttf') format('truetype');
+}
+html {
+  font-family: 'Baloo Paaji';
+  background: url('../img/sun.jpg');
+  background-size: cover;
+}
+.timeline_wrap {
+  margin: 100px 200px;
+}
+.timeline_wrap .vertical_line {
+  background-color: #a1d3f6;
+  width: 10px;
+  height: 1000px;
+}
+.timeline_wrap .vertical_line .item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline_wrap .vertical_line .item .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: -15px;
+  box-shadow: 0 0 0 10px #a1d3f6;
+  background-color: #3992d1;
+}
+.timeline_wrap .vertical_line .item .number {
+  width: 100px;
+  position: absolute;
+  left: -140px;
+  top: 0;
+  text-align: right;
+  line-height: 1.5;
+}
+.timeline_wrap .vertical_line .item .number .date {
+  color: #b0c5d2;
+  font-size: 16px;
+}
+.timeline_wrap .vertical_line .item .number .day {
+  color: #5bb1e9;
+  font-size: 26px;
+}
+.timeline_wrap .vertical_line .item .content::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-right: 12px solid #5bb1e9;
+  position: absolute;
+  left: -24px;
+  top: 10px;
+}
+.timeline_wrap .vertical_line .item .content {
+  font-family: '微软雅黑';
+  letter-spacing: 2px;
+  position: relative;
+  background-color: #5bb1e9;
+  width: 700px;
+  margin-left: 72px;
+  margin-top: -40px;
+  padding: 40px 30px 50px;
+  border-radius: 5px;
+}
+.timeline_wrap .vertical_line .item .content .title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+}
+.timeline_wrap .vertical_line .item .content .title::after {
+  content: '';
+  display: block;
+  width: 100;
+  height: 1px;
+  margin-top: 15px;
+  background-color: #98d0f2;
+}
+.timeline_wrap .vertical_line .item .content .detail {
+  margin-top: 20px;
+  color: #fff;
+  line-height: 1.5;
+}

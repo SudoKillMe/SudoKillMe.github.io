@@ -29,8 +29,6 @@ body{
     background-image: url('../img/leaves.jpg');
     background-attachment: fixed;
     background-size: cover;
-    /*min-width: 500px;*/
-    /*min-height: 700px;*/*/
 }
 #poem{
     font-family: 'Courgette';
